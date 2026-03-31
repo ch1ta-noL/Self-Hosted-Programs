@@ -9,6 +9,44 @@ inurl:"responsible disclosure" site:*
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+AI genrated dorks
+
+inurl:“/.well-known/security.txt” -hackerone -bugcrowd -intigriti -yeswehack 
+intitle:“security” (“report a vulnerability” OR “responsible disclosure”) 
+inurl:/security (“report a vulnerability” OR “vulnerability disclosure”) 
+inurl:/responsible-disclosure (“report” OR “security” OR “vulnerability”) 
+inurl:/vulnerability-disclosure (“policy” OR “program”)
+intitle:“vulnerability disclosure policy” -hackerone -bugcrowd
+
+(“vulnerability disclosure” OR “responsible disclosure”) (“reward” OR “bounty” OR “swag”) -hackerone -bugcrowd 
+intext:“eligible for a reward” “security vulnerability” 
+intext:“we may reward” “security vulnerability”
+intext:“hall of fame” “security vulnerability”
+
+site:.nl (“responsible disclosure” OR “vulnerability disclosure”)
+site:.de inurl:sicherheit (“meldung” OR “lücke”) 
+site:.fr (“divulgation responsable” OR “faille de sécurité”) 
+site:.es (“divulgación responsable” OR “vulnerabilidad”) 
+site:.it (“divulgazione responsabile” OR “sicurezza”) 
+site:.jp “脆弱性 報告”
+
+“If you believe you have found a vulnerability” 
+“If you discover a security vulnerability” 
+“We welcome security researchers” 
+“We take security seriously” “report” 
+“report security issues to” -hackerone -bugcrowd
+
+inurl:/security-policy 
+inurl:/security/report 
+inurl:/legal/security
+inurl:/trust/security 
+inurl:/security/contact 
+inurl:/security.txt ext:txt
+
+(“report a vulnerability” OR “security vulnerability”) inurl:security -hackerone -bugcrowd
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 inurl /bug bounty
 inurl : / security
 inurl:security.txt
